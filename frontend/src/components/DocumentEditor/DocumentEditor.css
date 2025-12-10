@@ -1,0 +1,429 @@
+/* BoloSign Exact Match - BoloForms Design */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bolosign {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Home View Background */
+.home-view {
+    background: linear-gradient(180deg, #F5F3FF 0%, #FFFFFF 50%);
+}
+
+/* Header - Purple gradient */
+.header {
+    height: 52px;
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-home {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-arrow {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.nav-create {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.counter-badge {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background: #F97316;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* HOME PAGE */
+.home-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+}
+
+.home-main h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.home-subtitle {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 40px;
+}
+
+/* Type Cards */
+.type-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.type-card.horizontal {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.type-card:hover {
+    border-color: #7C3AED;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon.yellow {
+    background: #FEF3C7;
+}
+
+.pdf-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: #D97706;
+}
+
+.card-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #9CA3AF;
+}
+
+/* ============================================
+   EDITOR VIEW - BoloForms Design
+   ============================================ */
+
+.editor-view {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Editor Header */
+.editor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #fff;
+    border-bottom: 1px solid #E5E7EB;
+    min-height: 52px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #6B7280;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.close-btn:hover {
+    color: #374151;
+}
+
+.doc-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F2937;
+    flex: 1;
+    margin-left: 12px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #6B7280;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.send-btn {
+    background: #7C3AED;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.send-btn:hover {
+    background: #6D28D9;
+}
+
+.send-btn:disabled {
+    opacity: 0.5;
+}
+
+/* Undo/Redo Bar */
+.undo-bar {
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.undo-btn,
+.redo-btn {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #6B7280;
+    cursor: pointer;
+}
+
+.undo-btn:hover,
+.redo-btn:hover {
+    background: #F3F4F6;
+    color: #374151;
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 4px;
+    background: linear-gradient(90deg, #7C3AED 0%, #A78BFA 50%, #E5E7EB 50%);
+}
+
+/* PDF Container */
+.pdf-container {
+    flex: 1;
+    overflow: auto;
+    background: #F3F4F6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Sparkle Indicator */
+.sparkle-indicator {
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #9CA3AF;
+}
+
+/* Bottom Toolbar */
+.bottom-toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #E5E7EB;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+/* Loading & Toast */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.spinner {
+    width: 44px;
+    height: 44px;
+    border: 3px solid #E5E7EB;
+    border-top-color: #7C3AED;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.toast {
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1F2937;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media (max-width: 768px) {
+    .header {
+        height: 48px;
+        padding: 0 12px;
+    }
+
+    .home-main {
+        padding: 32px 20px;
+    }
+
+    .home-main h1 {
+        font-size: 22px;
+    }
+
+    .type-card.horizontal {
+        padding: 16px 20px;
+    }
+
+    .card-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .editor-header {
+        padding: 10px 12px;
+    }
+
+    .doc-name {
+        font-size: 14px;
+    }
+
+    .pdf-container {
+        padding: 12px;
+        padding-bottom: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-home,
+    .nav-arrow {
+        display: none;
+    }
+
+    .home-main h1 {
+        font-size: 20px;
+    }
+
+    .card-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,139 @@
+.signature-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 24, 39, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.signature-modal {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.signature-modal h3 {
+    margin: 0 0 20px 0;
+    color: var(--gray-900);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.signature-canvas-container {
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    background: var(--gray-50);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.signature-canvas-container canvas {
+    display: block;
+    width: 100%;
+    touch-action: none;
+}
+
+.signature-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.signature-actions button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn-clear {
+    background: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-600);
+}
+
+.btn-clear:hover {
+    background: var(--gray-200);
+}
+
+.btn-cancel {
+    background: var(--white);
+    border: 1px solid var(--gray-300);
+    color: var(--gray-700);
+}
+
+.btn-cancel:hover {
+    background: var(--gray-50);
+}
+
+.btn-save {
+    background: var(--primary);
+    border: none;
+    color: white;
+}
+
+.btn-save:hover {
+    background: var(--primary-dark);
+}
+
+/* Text input modal */
+.text-input-modal {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.text-input-modal h3 {
+    margin: 0 0 20px 0;
+    color: var(--gray-900);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-input-modal input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease;
+}
+
+.text-input-modal input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+/* Date picker modal */
+.date-picker-modal input[type="date"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--gray-300);
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.date-picker-modal input[type="date"]:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}

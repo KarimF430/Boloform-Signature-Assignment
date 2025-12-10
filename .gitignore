@@ -1,0 +1,36 @@
+# .gitignore for Signature Injection Engine
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Uploaded files (keep structure, ignore content)
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/signed/*
+!backend/signed/.gitkeep
+
+# Test coverage
+coverage/

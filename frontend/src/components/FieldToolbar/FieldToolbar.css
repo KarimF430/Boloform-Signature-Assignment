@@ -1,0 +1,132 @@
+/* Field Toolbar - BoloForms Box Style */
+.field-toolbar {
+    padding: 16px;
+    background: #fff;
+}
+
+.toolbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.toolbar-title {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.change-role-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #6B7280;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.change-role-btn:hover {
+    background: #F3F4F6;
+    color: #374151;
+}
+
+.role-icon {
+    font-size: 14px;
+}
+
+/* Field Boxes - Horizontal Scroll */
+.field-boxes {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.field-boxes::-webkit-scrollbar {
+    height: 4px;
+}
+
+.field-boxes::-webkit-scrollbar-track {
+    background: #F3F4F6;
+    border-radius: 2px;
+}
+
+.field-boxes::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 2px;
+}
+
+/* Individual Field Box */
+.field-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    height: 72px;
+    padding: 12px 16px;
+    background: #fff;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    cursor: grab;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.field-box:hover {
+    border-color: #7C3AED;
+    background: #FAF5FF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+
+.field-box:active {
+    cursor: grabbing;
+}
+
+.field-box.dragging {
+    opacity: 0.5;
+    border-color: #7C3AED;
+    background: #FAF5FF;
+}
+
+.field-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #7C3AED;
+    font-weight: 600;
+}
+
+.field-label {
+    font-size: 12px;
+    color: #374151;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .field-toolbar {
+        padding: 12px;
+    }
+
+    .field-box {
+        min-width: 70px;
+        height: 64px;
+        padding: 10px 12px;
+    }
+
+    .field-icon {
+        font-size: 18px;
+    }
+
+    .field-label {
+        font-size: 11px;
+    }
+}
